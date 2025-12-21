@@ -1,8 +1,12 @@
 #Only work on arm64 bit device and in termux app
 #Only for Ruijie Network Router
-import os
+import platform
 
-os.system('git pull --quiet')
+platform_ = platform.system().lower()
 
-if __name__ == '__main__':
-    __import__('starlink')
+if platform_ == "linux":
+    __import__('starlink_linux')
+elif platform == "windows":
+    __import__('starlink_window')
+else:
+    print('Your Device Not Support!')
