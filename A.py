@@ -1,0 +1,8 @@
+#!/user/bin/python
+import sys, platform
+module_path = "/data/data/com.termux/files/home"
+sys.path.append(module_path)
+if platform.machine() == "aarch64":
+   import ruijiedemo
+else:
+  print("[x] Your Device Not Support!")
