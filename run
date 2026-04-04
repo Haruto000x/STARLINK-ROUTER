@@ -1,4 +1,4 @@
-#!/user/bin/python
+#!/usr/bin/python
 import sys, platform
 module_path = "/data/data/com.termux/files/home"
 sys.path.append(module_path)
